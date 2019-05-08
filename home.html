@@ -5,27 +5,63 @@
 </head>
 
 <body>
-    <div id="add">
-        <span>[Making your Life Easier]</span>
-        <span>Discovering the World</span>
+    <div align="center" id="add">
+        <span >[Making your Life Easier]</span>
+        
+        <h1 >Discovering the World</h1>
     </div>
-    <div id="add">
-        <button></button>
+    <div align="right" id="add">
+        <button value="Add" src=""> "(icono add)"</button>
     </div>
-    <div id="filters">
-        <button></button>
+    <div align="center" id="filters">
+        <button value="All"> All</button>
+        <button value="Travel"> Travel</button>
+        <button value="Lifestyle"> Lifestyle</button>
+        <button value="Business"> Business</button>
+        <button value="Food"> Food</button>
+        <button value="Work"> Work</button>
     </div>
-    <div id="posts"></div>
-    <div id="add_form">
+    <div class="row" id="posts">
+        <div name="izquierdo">
+                <img src="travel.jpg">
+            <details>
+                <p>Travel in your motorcycle around the world 
+                    with our technology</p>
+            </details>
+            <img src="food.jpg">
+            <details>
+                <p>Enjoy awesome food with us!</p>
+        </div>
+        <div  name="derecho">
+                <img src="bussines.jpg">
+                <details>
+                    <p>we are your best bussines choice!</p>
+        </div>
+        <div  name="derecho">
+                <img src="lifestyle.jpg">
+                <details>
+                    <p>Only live Once! Enjoy it!!</p>
+        </div>
+    </div>
+    <form id="add_form">
         <label>Title</label>
+        <input type="text" name="" id="">
         <label>Description</label>
+        <input type="text" name="" id="">
         <label>Type</label>
         <select>
             <option value="LIFESTYLE">LIFESTYLE</option>
             <option value="TRAVEL">TRAVEL</option>
+            <option value="Business"> Business</option>
+        <option value="Food"> Food</option>
+        <option value="Work"> Work</option>
         </select>
+        <label for="">Url Image</label>
+        <input type="url" name="" id="">
         <label>Date</label>
-    </div>
+        <input type="date" name="Date" id="">
+        <button type="submit">Guardar</button>
+    </form>
 </body>
 
 </html>
