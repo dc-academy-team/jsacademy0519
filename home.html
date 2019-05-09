@@ -6,37 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="description" content="JS Academy 0519">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet"> 
     <title>JS Academy 0519</title>
 </head>
 
 <body>
     <div id="header" align="center">
-        <span>[Making your Life Easier]</span>
+        <span><font size="+2">[</font> Making your Life Easier <font size="+2">]</font></span>
         <h1>Discovering the World</h1>
     </div>
+    <a href="#"><div id="editPost"></div></a>
     <div id="filters" align="center">
-        <button>All</button>
-        <button>Travel</button>
-        <button>Lifestyle</button>
-        <button>Business</button>
-        <button>Food</button>
-        <button>Work</button>
+        <div class="topnav">
+            <button class="active">All</button>
+            <button>Travel</button>
+            <button>Lifestyle</button>
+            <button>Business</button>
+            <button>Food</button>
+            <button>Work</button>
+        </div>
     </div>
     <div id="posts">
-        <div id="post1">
-            <a href="#"><img src="beach1.jpg" width="50%"></a>
-            <h3></h3>
-            <span></span>
-            <p></p>
-            <label></label>
-        </div>
-        <div id="post2">
-            <a href="#"><img src="beach2.jpg" width="50%"></a>
-            <h3></h3>
-            <span></span>
-            <p></p>
-            <label></label>
-        </div>
+        <a href="#1">
+            <div id="post1" class="postClass">
+                <h3 class="shadowText">The waves are high & beautiful</h3>
+                <span class="shadowText"><i>3 Comments</i> <img src="comments.png" width="16px" height="16px"></span>
+                <p class="shadowText">Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrund. Photo booth anim 8-bit hella</p>
+                <label class="shadowText">Travel</label>
+            </div>
+        </a>
+        <a href="#2">
+            <div id="post2" class="postClass">
+                <h3 class="shadowText">At the beach in the winter</h3>
+                <span class="shadowText"><i>0 Comments</i> <img src="comments.png" width="16px" height="16px"></span>
+                <p class="shadowText">Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrund. Photo booth anim 8-bit hella</p>
+                <label class="shadowText">Lifestyle</label>
+            </div>
+        </a>
     </div>
     <div id="add_form">
         <form id="form">
@@ -48,10 +55,10 @@
                 <option value="LIFESTYLE" required>LIFESTYLE</option>
                 <option value="TRAVEL" required>TRAVEL</option>
             </select>
-            <label for="urlImage">URL of the image<input type="url" name="url" required/>
+            <label for="urlImage">URL of the image</label><input type="url" name="url" required>
             <label>Date</label><input type="month" required/>
+            <button type="Submit" form= value="Submit">Save</button>
             <button>Cancel</button>
-            <button type="Submit">Save</button>
         </form>
     </div>
 </body>
