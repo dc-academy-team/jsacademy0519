@@ -1,31 +1,92 @@
 <!DOCTYPE html>
+<html lang=“en-us”>
+
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="FIRST PROJECT IN JS ACADEMY">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Project JS Academy</title>
 </head>
 
 <body>
-    <div id="add">
-        <span>[Making your Life Easier]</span>
-        <span>Discovering the World</span>
-    </div>
-    <div id="add">
-        <button></button>
-    </div>
-    <div id="filters">
-        <button></button>
-    </div>
-    <div id="posts"></div>
-    <div id="add_form">
-        <label>Title</label>
-        <label>Description</label>
-        <label>Type</label>
-        <select>
-            <option value="LIFESTYLE">LIFESTYLE</option>
-            <option value="TRAVEL">TRAVEL</option>
-        </select>
-        <label>Date</label>
-    </div>
+
+    <main>
+
+        <!-- header -->
+        <header id="titles">
+            <p id='textIntro'>[Making your Life Easier]<p>
+                    <h1 id='textHeader'>Discovering the World</h1>
+        </header>
+
+        <!-- Add post button that will open a modal with a form where you can creaet a post-->
+        <div class="addPostContainer">
+            <button id="createPost" type="button">Add</button>
+        </div>
+
+        <!-- Buttons that filter by tag assigned to the post with the option to add another button dynamically  -->
+        <div id="btn-group">
+            <button id='btnFilter' type="button">All</button>
+            <button id='btnFilter' type="button">Travel</button>
+            <button id='btnFilter' type="button">Food</button>
+            <button id='btnFilter' type="button">Bussiness</button>
+            <button id='btnFilter' type="button">Work</button>
+        </div>
+
+        <!-- In this section cards will be appended dynamically according to the created post-->
+
+
+        <div id="post-container">
+            <div class=postOne>
+                <a href="#">
+                    <h3>Title of the post</h3>
+                    <p>description of the post</p>
+                    <span>Food</span>
+                </a>
+            </div>
+
+            <div class=posTwo>
+                <a href="#">
+                    <h3>Title of the post</h3>
+                    <p>description of the post</p>
+                    <span>Travel</span>
+                </a>
+            </div>
+            
+        </div>
+
+
+
+        <!-- This modal will contain a form that will take all the parameters necessary to create a post with the option to add a new tag dynamically-->
+        <!-- <div>
+            <form>
+
+                <label for="title">Title:</label>
+                <input id="title" name="title" type="text" />
+
+                <label for="title">Description:</label>
+                <input id="Description" name="Description" type="text" />
+
+                <label for="title">Category:</label> -->
+
+        <!-- All the tags will be added dynamically -->
+        <!-- <select id="tags">
+                    <option value="Food">Food</option>
+                </select>
+
+                <button type="submit">submit</button>
+
+                <time>Date</time>
+            </form>
+        </div> -->
+
+    </main>
+
+
 </body>
 
 </html>
