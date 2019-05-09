@@ -27,6 +27,10 @@
     width: 100px;
 }
 
+#post-container {
+    display: flex;
+}
+
 .postOne{
     border: 1px;
     border-style: dashed;
