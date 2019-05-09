@@ -5,26 +5,49 @@
 </head>
 
 <body>
-    <div id="add">
+    <div id="header" align="center">
         <span>[Making your Life Easier]</span>
-        <span>Discovering the World</span>
+        <h5>Discovering the World</h5>
     </div>
-    <div id="add">
-        <button></button>
+    <div id="filters" align="center">
+        <button>All</button>
+        <button>Travel</button>
+        <button>Lifestyle</button>
+        <button>Business</button>
+        <button>Food</button>
+        <button>Work</button>
     </div>
-    <div id="filters">
-        <button></button>
+    <div id="posts">
+        <div id="post1"> 
+            <h2>The waves are high & beautiful</h2><br>
+            <h4>3 Comments</h4><br>
+            <h4>Meh synth Schlitz, tempor duis singleorigin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo boot anim bit hella</h4><br>
+            <h5><strong>TRAVEL</strong></h5><br>
+        </div>
+        <div id="post2">
+            <h2>At the beach in winter</h4><br>
+            <h4>0 Comments</h4><br>
+            <h4>Meh synth Schlitz, tempor duis singleorigin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo boot anim bit hella</h1><br>
+            <h5><strong>Lifestyle</strong></h5><br>
+        </div>
+        <div id="post3">
+        </div>
+        <div id="post4">
+        </div>
     </div>
-    <div id="posts"></div>
     <div id="add_form">
-        <label>Title</label>
-        <label>Description</label>
-        <label>Type</label>
+        <h4 align="center">Create post</h4><br>
+        <label for="title">Title</label><br><input type="text" id="title" name="title" required minlength="4" maxlength="50" size="10"><br>
+        <label for="description">Description</label><br><input type="text" id="description" name="description" size="10"><br>
+        <label for="category">Category</label><br>
         <select>
             <option value="LIFESTYLE">LIFESTYLE</option>
             <option value="TRAVEL">TRAVEL</option>
-        </select>
-        <label>Date</label>
+        </select><br>
+        <label for="urlImage">URL of the image<br><input type="url" name="url"/><br>
+        <label>Date</label><br><input type="month"/><br>
+        <button>Cancel</button>
+        <button>Save</button>
     </div>
 </body>
 
