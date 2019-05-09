@@ -2,12 +2,17 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="description" content="JS Academy 0519">
+    <title>JS Academy 0519</title>
 </head>
 
 <body>
     <div id="header" align="center">
         <span>[Making your Life Easier]</span>
-        <h5>Discovering the World</h5>
+        <h1>Discovering the World</h1>
     </div>
     <div id="filters" align="center">
         <button>All</button>
@@ -18,36 +23,36 @@
         <button>Work</button>
     </div>
     <div id="posts">
-        <div id="post1"> 
-            <h2>The waves are high & beautiful</h2><br>
-            <h4>3 Comments</h4><br>
-            <h4>Meh synth Schlitz, tempor duis singleorigin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo boot anim bit hella</h4><br>
-            <h5><strong>TRAVEL</strong></h5><br>
+        <div id="post1">
+            <a href="#"><img src="beach1.jpg" width="50%"></a>
+            <h3></h3>
+            <span></span>
+            <p></p>
+            <label></label>
         </div>
         <div id="post2">
-            <h2>At the beach in winter</h4><br>
-            <h4>0 Comments</h4><br>
-            <h4>Meh synth Schlitz, tempor duis singleorigin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo boot anim bit hella</h1><br>
-            <h5><strong>Lifestyle</strong></h5><br>
-        </div>
-        <div id="post3">
-        </div>
-        <div id="post4">
+            <a href="#"><img src="beach2.jpg" width="50%"></a>
+            <h3></h3>
+            <span></span>
+            <p></p>
+            <label></label>
         </div>
     </div>
     <div id="add_form">
-        <h4 align="center">Create post</h4><br>
-        <label for="title">Title</label><br><input type="text" id="title" name="title" required minlength="4" maxlength="50" size="10"><br>
-        <label for="description">Description</label><br><input type="text" id="description" name="description" size="10"><br>
-        <label for="category">Category</label><br>
-        <select>
-            <option value="LIFESTYLE">LIFESTYLE</option>
-            <option value="TRAVEL">TRAVEL</option>
-        </select><br>
-        <label for="urlImage">URL of the image<br><input type="url" name="url"/><br>
-        <label>Date</label><br><input type="month"/><br>
-        <button>Cancel</button>
-        <button>Save</button>
+        <form id="form">
+            <h4 align="center">Create post</h4>
+            <label for="form">Title</label><input type="text" id="title" name="title" required minlength="4" maxlength="50" size="10">
+            <label for="form">Description</label><input type="text" id="description" name="description" size="10" required>
+            <label for="form">Category</label>
+            <select>
+                <option value="LIFESTYLE" required>LIFESTYLE</option>
+                <option value="TRAVEL" required>TRAVEL</option>
+            </select>
+            <label for="urlImage">URL of the image<input type="url" name="url" required/>
+            <label>Date</label><input type="month" required/>
+            <button>Cancel</button>
+            <button type="Submit">Save</button>
+        </form>
     </div>
 </body>
 
