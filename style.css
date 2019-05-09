@@ -1,0 +1,14 @@
+.add{
+    
+}
+h1{
+   color : blueviolet;
+   
+}
+.header{
+    color: darkorange
+}
+.img-container{
+    display: flex;
+    justify-content: space-between;
+}
