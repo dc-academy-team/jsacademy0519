@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>        
+    </title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="post.scss">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div  class="container" align="center" id="add">
+        <span class="header">[Making your Life Easier]</span>
+        
+        <h1 >Discovering the World</h1>
+    </div>
+    <div class="container" align="right" id="add">
+        <button value="Add" src=""> "(icono add)"</button>
+    </div>
+    <div class="container-fluid" align="center">
+    <div  class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> All
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Travel
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option4" autocomplete="off"> Lifestyle
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option5" autocomplete="off"> Business
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option6" autocomplete="off"> Food
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option7" autocomplete="off"> Work
+  </label>
+    </div>
+</div>
+    <div id="post">
+        <a href="#1">
+            <div id="travel" class="postclass">
+                <h3>Esto es el encabezado o titulo</h3>
+                <span><i>3 comments</i><img src="travel.jpg" width="16px" height="16px"></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam expedita, provident quis delectus pariatur illum facere dicta ab asperiores incidunt, voluptatum praesentium aspernatur aliquid enim eveniet tempore, iste magni laboriosam.</p>
+                <label>Traveler</label>
+            </div>
+        </a>
+
+        <a href="#2">
+                <div id="food" class="postclass">
+                    <h3>Esto es el encabezado o titulo</h3>
+                    <span><i>3 comments</i><img src="food.jpg" width="16px" height="16px"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam expedita, provident quis delectus pariatur illum facere dicta ab asperiores incidunt, voluptatum praesentium aspernatur aliquid enim eveniet tempore, iste magni laboriosam.</p>
+                    <label>Food</label>
+                </div>
+        
+            </a>
+            
+    </div>
+           
+        </div>
+    </div>
+    </div>
+</div>
+<div>
+    <form id="add_form">
+        <label>Title</label>
+        <input type="text" name="" id="">
+        <label>Description</label>
+        <input type="text" name="" id="">
+        <label>Type</label>
+        <select>
+            <option value="LIFESTYLE">LIFESTYLE</option>
+            <option value="TRAVEL">TRAVEL</option>
+            <option value="Business"> Business</option>
+        <option value="Food"> Food</option>
+        <option value="Work"> Work</option>
+        </select>
+        <label for="">Url Image</label>
+        <input type="url" name="" id="">
+        <label>Date</label>
+        <input type="date" name="Date" id="">
+        <button type="submit">Guardar</button>
+    </form>
+</div>
+</body>
+
+</html>
