@@ -1,0 +1,248 @@
+@font-face {
+  font-family: 'Ubuntu', sans-serif;
+  src: url(https://fonts.googleapis.com/css?family=Ubuntu);
+}
+@font-face {
+	font-family: "Raider Crusader";
+	src: url("../fonts/raidercrusaderstraight.ttf");
+}
+body {
+	background-image: url("../images/dark-honeycomb.png");
+	padding-top: 32px;
+	font-family: 'Ubuntu', sans-serif;
+}
+#subTitle {
+	font-size: 12;
+	color: #ff3300;
+	text-align: center;
+}
+#title h1{
+	font-family: "Raider Crusader";
+	font-size: 60px;
+	text-align: center;
+	color: #FFF;
+	background: -webkit-linear-gradient(#FFF, #666);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+#editButton{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-position: center;
+	background-color: #ff6600;
+	background-image: url("../images/pencil_16px.png"), linear-gradient(#ff6600, #ff0000);
+	background-repeat: no-repeat;
+	-webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+	filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.3));
+
+}
+#editButton:hover {
+	background-image: url("../images/pencil_16px.png"), linear-gradient(#ffb380, #ff6600);
+}
+.btn-primary {
+  color: #fff !important;
+  background-color: #ff6600 !important;
+  border: none !important;
+}
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: none !important;
+}
+.btn-primary:hover {
+	background-color: #ffb380 !important;
+}
+#filterMenu {
+	font-family: "Raider Crusader";
+	background-color: none;
+  	border-radius: 8px;
+  	margin-bottom: 10px;
+
+}
+#buttonMenu{
+	text-align: center;
+  	border-radius: 8px;
+  	margin: 0 auto 0 auto;
+
+}
+#filterMenu button{
+  	color: #FFF;
+ 	background-color: #FFF;
+	background-image: linear-gradient(#EEE, #333);
+ 	border: none;
+ 	margin-right: 2px;
+	color: #CC3300;
+	height: 50px;
+	width: 100px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+}
+#filterMenu button:hover {
+  	color: #FF3300;
+	background-image: linear-gradient(#FFF, #666);
+
+}
+.btn-secondary:focus, .btn-secondary.focus {
+	color: #CC3300;
+	box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+#posts {
+	width: 100%;
+	overflow: hidden;
+}
+#post1{
+	background-image: url("../images/FFBG.jpg");
+}
+#post2{
+	background-image: url("../images/WoWBG.jpg");
+}
+#post3{
+	background-image: url("../images/DooMBG.jpg");
+}
+#post4{
+	background-image: url("../images/LoLBG.jpg");
+}
+.card {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	border: none !important;
+    position: absolute;
+    bottom: 0;
+}
+.postClass {
+	background-position: center; 
+	background-repeat: no-repeat;
+	width: 100%;
+	float: left;
+	color: #FFF;
+  	display: block;
+	filter: brightness(100%);
+	padding: 0px;
+	height: 360px;
+}
+.postClass:hover {
+	color: #FFCC99;
+	filter: brightness(110%);
+}
+.shadowText {
+	filter: drop-shadow(2px 2px 4px rgba(0,0,0,1));
+}
+
+#add_form {
+	font-family: 'Ubuntu', sans-serif;
+	width: 96%;
+	background-color: #FFF;
+	margin: 0 auto 0 auto;
+  	border-radius: 8px;
+  	padding: 2%;
+  	padding-bottom: 3%;
+  	opacity: .7;
+}
+
+#form h4{
+	font-size: 24px;
+}
+#form input, select{
+	width: 100%;
+	margin: 0 auto 0 auto;
+    margin-bottom: 20px;
+	font-weight: 500;
+    border-top: 0px solid;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    border-bottom: 1px solid;
+}
+#form button{
+	background-color: #FFF;
+	border: none;
+	float: right;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	border-radius: 4px;
+}
+#form button:hover{
+	background-color: #6600ff;
+	border: none;
+	color: #FFF;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+
+.modal-header {
+	text-align: center;
+}
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+@media only screen and (max-width: 1180px) {
+	.postClass {
+	background-position: center; 
+	background-repeat: no-repeat;
+	width: 100%;
+	float: left;
+	color: #FFF;
+  	display: block;
+	filter: brightness(100%);
+	padding: 0px;
+	height: 360px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	#filterMenu button{
+	  	color: #FFF;
+	 	background-color: #FFF;
+		background-image: linear-gradient(#EEE, #333);
+	 	border: none;
+	 	margin-right: 2px;
+		color: #CC3300;
+		height: 30px;
+		width: 75px;
+		text-decoration: none;
+		font-size: 10px;
+		font-weight: 600;
+	}
+	.postClass {
+	background-position: center; 
+	background-repeat: no-repeat;
+	width: 100%;
+	float: left;
+	color: #FFF;
+  	display: block;
+	filter: brightness(100%);
+	padding: 0px;
+	height: 360px;
+	}
+
+	#editButton{
+		width: 28px;
+		height: 28px;
+		border-radius: 50%;
+		background-position: center;
+		background-color: #ff6600;
+		background-image: url("../images/pencil_16px.png"), linear-gradient(#ff6600, #ff0000);
+		background-repeat: no-repeat;
+		-webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.3));
+		filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.3));
+
+	}
+	#editButton:hover {
+		background-image: url("../images/pencil_16px.png"), linear-gradient(#ffb380, #ff6600);
+	}
+}
