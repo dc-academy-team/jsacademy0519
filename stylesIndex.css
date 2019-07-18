@@ -1,0 +1,38 @@
+.mainTitles {
+    text-align: center;
+}
+
+#buttonContainer{
+    text-align: center; 
+}
+
+.wrapperCol{
+    padding: 0 !important;
+    margin: 0 !important;
+    color: whitesmoke !important;
+    
+}
+
+.card-body{
+    padding-top: 160px !important;
+    height: 349px;
+    background-image: url('./travel1.jpg');
+    text-shadow: 1px .5px black;
+    opacity: 10;
+}
+
+
+a{
+    color: whitesmoke !important; 
+}
+
+h6{
+    color: whitesmoke !important; 
+}
+
+.card-title{
+    font-size: 30px;
+}
+
+
+

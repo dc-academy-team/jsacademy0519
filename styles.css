@@ -1,0 +1,49 @@
+#titles{
+    text-align: center;
+}
+
+#textIntro {
+    color: orange;
+    font-family: 'Roboto', sans-serif;
+}
+
+#textHeader {
+    color: black    ;
+    font-family: 'Roboto', sans-serif;
+}
+
+.addPostContainer {
+   float: right;
+   padding-right: 10px;
+}
+
+#btn-group{
+    margin: auto; 
+    width: 40%;
+    clear: both;
+}
+
+#btnFilter {
+    width: 100px;
+}
+
+#post-container {
+    display: flex;
+}
+
+.postOne{
+    border: 1px;
+    border-style: dashed;
+    width: 50%;
+    margin: auto;
+    clear: both;
+}
+
+.posTwo{
+    border: 1px;
+    border-style: dashed;
+    width: 50%;
+    margin: auto;
+    float: right;
+}
+
